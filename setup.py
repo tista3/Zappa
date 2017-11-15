@@ -28,7 +28,7 @@ with open(os.path.join(os.path.dirname(__file__), 'test_requirements.txt')) as f
     test_required = f.read().splitlines()
 
 setup(
-    name='zappa',
+    name='timo-zappa',
     version=__version__,
     packages=['zappa'],
     install_requires=required,
@@ -38,13 +38,13 @@ setup(
     license='MIT License',
     description='Server-less Python Web Services for AWS Lambda and API Gateway',
     long_description=README,
-    url='https://github.com/Miserlou/Zappa',
+    url='https://github.com/tista3/timo-Zappa',
     author='Rich Jones',
     author_email='rich@openwatch.net',
     entry_points={
         'console_scripts': [
-            'zappa=zappa.cli:handle',
-            'z=zappa.cli:handle',
+            'timo-zappa=zappa.cli:handle',
+            'tz=zappa.cli:handle',
         ]
     },
     classifiers=[
