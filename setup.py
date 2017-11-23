@@ -2,7 +2,7 @@ import os
 import sys
 from setuptools import setup
 from io import open
-from zappa import __version__
+from timo_zappa import __version__
 
 # Set external files
 try:
@@ -30,7 +30,7 @@ with open(os.path.join(os.path.dirname(__file__), 'test_requirements.txt')) as f
 setup(
     name='timo-zappa',
     version=__version__,
-    packages=['zappa'],
+    packages=['timo_zappa'],
     install_requires=required,
     tests_require=test_required,
     test_suite='nose.collector',
@@ -39,12 +39,12 @@ setup(
     description='Server-less Python Web Services for AWS Lambda and API Gateway',
     long_description=README,
     url='https://github.com/tista3/timo-Zappa',
-    author='Rich Jones',
-    author_email='rich@openwatch.net',
+    author='Timotej Stanek',
+    author_email='timotej.stanek@gmail.com',
     entry_points={
         'console_scripts': [
-            'timo-zappa=zappa.cli:handle',
-            'tz=zappa.cli:handle',
+            'timo-zappa=timo_zappa.cli:handle',
+            'tz=timo_zappa.cli:handle',
         ]
     },
     classifiers=[

@@ -2585,7 +2585,7 @@ def shamelessly_promote():
     """
     Shamelessly promote our little community.
     """
-
+    """
     click.echo("Need " + click.style("help", fg='green', bold=True) +
                "? Found a " + click.style("bug", fg='green', bold=True) +
                "? Let us " + click.style("know", fg='green', bold=True) + "! :D")
@@ -2595,7 +2595,7 @@ def shamelessly_promote():
                + click.style("https://slack.zappa.io", fg='cyan', bold=True))
     click.echo("Love!,")
     click.echo(" ~ Team " + click.style("Zappa", bold=True) + "!")
-
+    """
 def disable_click_colors():
     """
     Set a Click context where colors are disabled. Creates a throwaway BaseCommand
