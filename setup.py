@@ -38,6 +38,7 @@ setup(
     license='MIT License',
     description='Server-less Python Web Services for AWS Lambda and API Gateway',
     long_description=README,
+    long_description_content_type='text/markdown',
     url='https://github.com/tista3/timo-Zappa',
     author='Timotej Stanek',
     author_email='timotej.stanek@gmail.com',
